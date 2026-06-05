@@ -1,11 +1,19 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using BulkyBookWeb.Data;
+using System.ComponentModel.DataAnnotations;
 
 namespace BulkyBookWeb.Models
 {
+
     public class Category
     {
-        [Key]
+ 
+
+
+        // [Key]
         public int Id { get; set; }
         public String Name { get; set; } = string.Empty;
+
+       public int DisplayOrder { get; set; }
+
     }
 }
